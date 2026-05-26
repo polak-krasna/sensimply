@@ -1,2 +1,2 @@
 # sensimply
-Sensimply website hosting
+Sensimply website coming soon
