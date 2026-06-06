@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sensimply</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 80px 20px 50px;
+  border-bottom: 1px solid #eee;
+}
+
+header img {
+  height: 200px;
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+/* HEADINGS */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #C10707;
+}
+
+/* ABOUT */
+.about {
+  background: white;
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 15px auto;
+  line-height: 1.6;
+}
+
+/* QR CODE */
+.qr {
+  margin-top: 40px;
+}
+
+.qr img {
+  width: 180px;
+  height: auto;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.qr img:hover {
+  transform: scale(1.1);
+}
+
+/* TEAM */
+.team {
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.team-members {
+  display: grid;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.person strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* TEAM IMAGE */
+.team img {
+  margin-top: 40px;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.team img:hover {
+  transform: scale(1.05);
+}
+
+/* INSTITUTIONS */
+.institutions {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between; /* <-- KEY FIX */
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Individual logo sizes */
+.charite {
+  height: 60px;
+}
+
+.hereon {
+  height: 110px;
+}
+
+.logos img {
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.logos img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="sensimply_logo_red_text.svg" alt="Sensimply logo">
+</header>
+
+<!-- ABOUT -->
+<section class="about">
+  <h1>About</h1>
+
+  <p>
+    Sensimply develops sensor-based cardiovascular implants 
+    to improve device performance and clinical outcomes 
+    in patients with cardiovascular diseases.
+  </p>
+
+  <br>
+
+  <p>
+    Interested in finding out more?<br>
+    Get directly in touch!
+  </p>
+
+  <!-- CLICKABLE QR -->
+  <div class="qr">
+    <a href="https://outlook.office.com/bookwithme/user/5413bce2010040d6a622be6a4c159320%40hereon.de/meetingtype/KKnsDE5n40qLyiQNxMeguA2?bookingcode=0297b814-a4f7-4315-b759-b0f98ec05a72&anonymous&ismsaljsauthenabled" target="_blank">
+      <img src="qr_code.svg" alt="QR Code">
+    </a>
+  </div>
+
+</section>
+
+<!-- TEAM -->
+<section class="team">
+  <h2>Team</h2>
+
+  <div class="team-members">
+
+    <div class="person">
+      <strong>Dr. Katarzyna Polak-Kraśna</strong>
+      Biomedical Engineer
+    </div>
+
+    <div class="person">
+      <strong>Dr. Markus Reinthaler</strong>
+      Interventional Cardiologist
+    </div>
+
+    <div class="person">
+      <strong>Dr. Marcin J. Kraśny</strong>
+      Medical Electronics Engineer
+    </div>
+
+  </div>
+
+  <img src="team.png" alt="Team photo">
+</section>
+
+<!-- INSTITUTIONS -->
+<section class="institutions">
+  <h2>Institutions</h2>
+
+  <div class="logos">
+
+    <!-- Hereon LEFT -->
+    <a href="https://www.hereon.de/institutes/active_polymers/digital_design_manufacturing/index.php.de" target="_blank">
+      <img src="hereon_logo.svg" class="hereon" alt="Hereon">
+    </a>
+
+    <!-- Charité RIGHT -->
+    <a href="https://www.dhzc.charite.de/en/team/reinthaler-markus/" target="_blank">
+      <img src="charite_logo.svg" class="charite" alt="Charité">
+    </a>
+
+  </div>
+</section>
+
+</body>
+</html>
